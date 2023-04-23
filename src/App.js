@@ -9,13 +9,15 @@ import {BrowserRouter ,Route,Routes} from 'react-router-dom'
 
 function App() {
 
+
   
 
   return (
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}> </Route>
+        <Route  path='/' element={<Login/>}> </Route>
+        <Route path='/home' element={<Home/>}> </Route>
         <Route path='/emp/edit/:uid' element={<Edit/>}> </Route>
         <Route path='/emp/create' element={<Add/>}> </Route>
       </Routes>
